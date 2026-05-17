@@ -57,8 +57,14 @@ sql dump file:
 - db_backup.sql file is a mysql dump file.we have to import this dump to mysql db server
 - > mysql -u <user_name> -p accounts < db_backup.sql
 
+<<<<<<< HEAD
 ## Take away
 - Tomcat is an application server to host Java Web Application like vprofile.
+=======
+## Settings
+### 1. Memcached
+You may encounter problem while setting the memcached service, so try to do this: `vi /etc/sysconfig/memcached` and update `OPTIONS="-l 0.0.0.0,::1"` to `OPTIONS="-l 0.0.0.0"` (ipv4)
+>>>>>>> 759ef16f84e174e4ce0d1baaad3726b2e87005bb
 
 - Nginx is a frontent server, web server and can be used as a Load balancer.
 
